@@ -1,2 +1,22 @@
-# eks-nginx-deployment
-Built and managed an AWS EKS Kubernetes cluster using eksctl; deployed NGINX web server with LoadBalancer service; automated configuration via AWS CLI and kubectl; documented full workflow on GitHub. Tools: AWS, EKS, Kubernetes, eksctl, kubectl, CloudFormation, IAM
+# 🚀 Deploying NGINX on Amazon EKS (Elastic Kubernetes Service)
+
+This project demonstrates deploying an **NGINX web server** on a managed **Amazon EKS Kubernetes cluster** using `eksctl`, `kubectl`, and AWS CLI.
+
+---
+
+## 🧰 Tools & Technologies
+- **Amazon EKS (Elastic Kubernetes Service)**
+- **AWS CLI**
+- **eksctl**
+- **kubectl**
+- **NGINX**
+- **IAM OIDC Provider**
+- **CloudFormation**
+
+---
+
+## ⚙️ Quick Start Commands
+
+### 1️⃣ Create EKS Cluster (Control Plane)
+```bash
+eksctl create cluster --name my-first-cluster --region ap-south-1 --version 1.30 --without-nodegroup
